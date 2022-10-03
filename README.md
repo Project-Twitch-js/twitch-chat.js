@@ -1,4 +1,4 @@
-npx eslint# Installing
+# Installing
 ```bash
 npm i twitch.js --save
 ```
