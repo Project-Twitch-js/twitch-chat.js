@@ -1,0 +1,25 @@
+{
+  "name": "twitch.js",
+  "version": "1.0.0",
+  "description": "A wrapper for twitch",
+  "main": "test/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+		"lint": "eslint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "fs": "^0.0.1-security",
+    "ws": "^8.8.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.24.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1"
+  }
+}
