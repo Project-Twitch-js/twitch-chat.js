@@ -5,7 +5,7 @@ npm i twitch.js --save
 
 # Getting Starting
 ```js
-const { Client } = require('twitch.js');
+const { Client } = require('..');
 const client = new Client({
 	name: 'YOUR_BOT_NAME',
 	client_id: 'CLIENT_ID',
@@ -26,7 +26,7 @@ client.login('BOT_TOKEN')
 
 ### Creating a Command and Event Handlers
 ```js
-const { Client, CommandHandler, Collection } = require('twitch.js');
+const { Client, CommandHandler, Collection } = require('..');
 
 const client = new Client({
 	name: 'YOUR_BOT_NAME',
@@ -121,7 +121,7 @@ CHANNELS=['CHANNEL_1','CHANNEL_2']
 #### Example main file
 
 ```js
-const { Client, CommandHandler, Collection } = require('twitch.js');
+const { Client, CommandHandler, Collection } = require('..');
 
 const client = new Client()
 
