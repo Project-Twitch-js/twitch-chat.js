@@ -1,6 +1,6 @@
 # Installing
 ```bash
-npm i twitch.js --save
+npm i ... --save
 ```
 
 # Getting Starting
@@ -121,7 +121,7 @@ CHANNELS=['CHANNEL_1','CHANNEL_2']
 #### Example main file
 
 ```js
-const { Client, CommandHandler, Collection } = require('..');
+const { Client } = require('..');
 
 const client = new Client()
 
