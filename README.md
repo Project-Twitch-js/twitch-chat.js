@@ -26,7 +26,7 @@ client.login('BOT_TOKEN')
 
 ### Creating a Command and Event Handlers
 ```js
-const { Client, CommandHandler, Collection } = require('..');
+const { Client, CommandHandler, EventHandler, Collection } = require('..');
 
 const client = new Client({
 	name: 'YOUR_BOT_NAME',
@@ -66,6 +66,8 @@ module.exports = class Message {
 		}
 	}
 	run(message) {
+		if(message.channel.type == 'whisper') return;
+		if(!message.content.statsWith('!')) return;
 		const args = message.content
 		.trim()
 		.slice(1)
