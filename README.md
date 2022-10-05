@@ -1,6 +1,11 @@
+# ...
+A simples Twitch API wrapper
+
+# Contents
+
 - [Installing](#installing)
 - [Getting Starting](#getting-starting)
-  - [Creating command and event handlers](#creating-a-command-and-event-handler)
+  - [Creating command and event handlers](#creating-a-command-and-event-handlers)
     - [First Event](#first-event)
     - [First Command](#first-command)
 - [Advenced](#advenced)
@@ -139,13 +144,3 @@ const client = new Client()
 
 client.login()
 ```
-
-- [Installing](#installing)
-- [Getting Starting](#getting-starting)
-  - [Creating command and event handlers](#creating-a-command-and-event-handler)
-    - [First Event](#first-event)
-    - [First Command](#first-command)
-- [Advenced](#advenced)
-  - [Creating an env file](#creating-an-env-file)
-    - [Example main file](#example-main-file)
-  
