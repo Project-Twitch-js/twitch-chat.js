@@ -1,5 +1,5 @@
 # ...
-A simples Twitch API wrapper
+A simple Twitch API wrapper
 
 # Contents
 
