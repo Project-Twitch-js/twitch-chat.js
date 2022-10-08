@@ -20,7 +20,7 @@ npm i twitch-chat.js --save
 
 # Getting Starting
 ```js
-const { Client } = require('twit.js');
+const { Client } = require('twitch-chat.js');
 const client = new Client({
 	name: 'YOUR_BOT_NAME',
 	client_id: 'CLIENT_ID',
