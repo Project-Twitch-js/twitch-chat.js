@@ -2,4 +2,5 @@
 /test
 /.env
 /.config
+/.replit
 /package-lock.json
