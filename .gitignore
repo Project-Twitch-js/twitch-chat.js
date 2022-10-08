@@ -1,7 +1,5 @@
 /node_modules
 /test
 /.env
-/.replit
 /.config
 /package-lock.json
-/replit.nix
