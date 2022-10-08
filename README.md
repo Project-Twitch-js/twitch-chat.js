@@ -82,7 +82,7 @@ module.exports = class Message {
 	}
 	run(message) {
 		if(message.channel.type == 'whisper') return;
-		if(!message.content.statsWith('!')) return;
+		if(!message.content.startsWith('!')) return;
 		const args = message.content
 		.trim()
 		.slice(1)
