@@ -1,25 +1,32 @@
 {
   "name": "twitch.js",
   "version": "1.0.0",
-  "description": "A wrapper for twitch",
-  "main": "test/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-		"lint": "eslint"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "description": "A simple twitch API wrapper",
+  "main": "index.js",
   "dependencies": {
-    "axios": "^0.27.2",
+		"axios": "^0.27.2",
     "fs": "^0.0.1-security",
     "ws": "^8.8.1"
   },
-  "devDependencies": {
-    "eslint": "^8.24.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "prettier": "^2.7.1"
-  }
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Project-Twitch-js/twitch.js.git"
+  },
+  "keywords": [
+    "twitch-client",
+    "twitch-bot",
+    "twitch-chat-bot",
+		"bot",
+		"chat-bot"
+  ],
+  "author": "kayake.",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Project-Twitch-js/twitch.js/issues"
+  },
+  "homepage": "https://github.com/Project-Twitch-js/twitch.js#readme"
 }
