@@ -1,4 +1,4 @@
-# Twitch.js
+# Twitch-chat.js
 A simple Twitch API wrapper
 
 # Contents
@@ -15,12 +15,12 @@ A simple Twitch API wrapper
 
 # Installing
 ```bash
-npm i twitch.js --save
+npm i twitch-chat.js --save
 ```
 
 # Getting Starting
 ```js
-const { Client } = require('twitch.js');
+const { Client } = require('twit.js');
 const client = new Client({
 	name: 'YOUR_BOT_NAME',
 	client_id: 'CLIENT_ID',
@@ -41,7 +41,7 @@ client.login('BOT_TOKEN')
 
 ### Creating a Command and Event Handlers
 ```js
-const { Client, CommandHandler, EventHandler, Collection } = require('twitch.js');
+const { Client, CommandHandler, EventHandler, Collection } = require('twitch-chat.js');
 
 const client = new Client({
 	name: 'YOUR_BOT_NAME',
@@ -138,7 +138,7 @@ CHANNELS=['CHANNEL_1','CHANNEL_2']
 #### Example main file
 
 ```js
-const { Client } = require('twitch.js');
+const { Client } = require('twitch-chat.js');
 
 const client = new Client()
 
