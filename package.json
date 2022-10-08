@@ -1,6 +1,6 @@
 {
   "name": "twitch-chat.js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple twitch API wrapper",
   "main": "index.js",
   "dependencies": {
