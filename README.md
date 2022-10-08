@@ -108,7 +108,7 @@ module.exports = class PingCommand {
 	constructor() {
 		return {
 			name: 'ping',
-			alises: ['pong'],
+			aliases: ['pong'],
 			run: this.run
 		}
 	}
