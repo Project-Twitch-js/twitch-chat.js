@@ -60,8 +60,8 @@ Handlers Examples
 Example:
 */
 
-let commands = new Command(a, './test/commands/')
-let event = new Event(a, './test/events/')
+let commands = new Command(client, './test/commands/')
+let event = new Event(client, './test/events/')
 event.load()
 commands.load()
 
