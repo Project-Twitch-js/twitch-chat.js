@@ -62,8 +62,8 @@ module.exports = class Channel extends Base {
 		if(!options) super.makeError('[MISSING_PARAMETER]: Parameter "options" is required')
 		const data_raw = ''
 		if(options.game_id) data_raw = data_raw + `game_id=${options.game_id}&`
-		if(options.title) data_raw = data_raw = `title=${options.title}&`
-		if(options.broadcaster_language) data_raw = data_raw = `broadcaster_language=${options.broadcaster_language}&`
+		if(options.title) data_raw = data_raw + `title=${options.title}&`
+		if(options.broadcaster_language) data_raw = data_raw + `broadcaster_language=${options.broadcaster_language}&`
 		if(options.delay) data_raw = data_raw + `delay=${options.delay}`
 		const data = {
 			headers: {
@@ -77,8 +77,6 @@ module.exports = class Channel extends Base {
 	}
 
 	async deleteMessages() {
-		const moderator = await this.moderators({first: 1})
-		
 		await this.twitch.rest.http('DELETE', constants.base + constants.endpoints.moderation.chat + `broadcaster_id=${this.user.id}&moderator_id=${moderator[0].id}`)
 		return true
 	}

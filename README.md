@@ -42,7 +42,8 @@ client.login('BOT_TOKEN')
 
 ### Creating a Command and Event Handlers
 ```js
-const { Client, CommandHandler, EventHandler, Collection } = require('twitch-chat.js');
+const { Client, Collection } = require('twitch-chat.js');
+const { Command, Event } = require('@twitchchatjs/handlers');
 
 const client = new Client({
 	client_name: 'YOUR_BOT_NAME',
@@ -59,8 +60,8 @@ Handlers Examples
 Example:
 */
 
-let commands = new CommandHandler(a, './test/commands/')
-let event = new EventHandler(a, './test/events/')
+let commands = new Command(a, './test/commands/')
+let event = new Event(a, './test/events/')
 event.load()
 commands.load()
 
@@ -143,8 +144,8 @@ client.login()
 - `join()` doesn't work correctly and stop the code
 #### Added (Methods)
 - `Channel.edit()`
-- `Channel.moderators()`
 - `Channel.deleteMessages()`
+- `Channel.moderators()`
 - `Client.user.block()`
 - `Client.user.unblock()`
 - `Message.channel.stream.ads()`
@@ -164,7 +165,14 @@ client.login()
 - `punishment`
 - `unpunishment`
 
+#### Removed (ENV and options)
+- `TWITCH_NAME`
+- `CHANNELS`
+
+#### Change (ENV and options)
+- `TWITCH_TOKEN` to `CLIENT_TOKEN`
+- `OptionsClient = { name: 'foo'}` to `OptionsClient = { client_name: 'foo'}`
 #### Change (Methods)
-- `Message.channel.createClip() ` to `Message.channel.stream.createClip()`
+- `Message.channel.createClip()` to `Message.channel.stream.createClip()`
 - `Message.channel.clip()` to `Message.channel.stream.clip()`
 - `Client.join()` to `Client.user.join()`

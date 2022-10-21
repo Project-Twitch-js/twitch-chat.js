@@ -144,8 +144,8 @@ client.login()
 - `join()` doesn't work correctly and stop the code
 #### Added (Methods)
 - `Channel.edit()`
-- `Channel.moderators()`
 - `Channel.deleteMessages()`
+- `Channel.moderators()`
 - `Client.user.block()`
 - `Client.user.unblock()`
 - `Message.channel.stream.ads()`
@@ -169,8 +169,8 @@ client.login()
 - `CHANNELS`
 #### Change (ENV and options)
 - `TWITCH_TOKEN` to `CLIENT_TOKEN`
-- `OptionsClient = { name: 'foo'} to `OptionsClient = { client_name: 'foo'}
+- `OptionsClient = { name: 'foo'}` to `OptionsClient = { client_name: 'foo'}`
 #### Change (Methods)
-- `Message.channel.createClip() ` to `Message.channel.stream.createClip()`
+- `Message.channel.createClip()` to `Message.channel.stream.createClip()`
 - `Message.channel.clip()` to `Message.channel.stream.clip()`
 - `Client.join()` to `Client.user.join()`
