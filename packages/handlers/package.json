@@ -28,5 +28,8 @@
   "bugs": {
     "url": "https://github.com/Project-Twitch-js/twitch-chat.js/issues"
   },
+	"publishConfig": {
+		"access": "public"
+	},
   "homepage": "https://github.com/Project-Twitch-js/twitch-chat.js#readme"
 }

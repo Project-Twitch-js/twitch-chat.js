@@ -42,7 +42,8 @@ client.login('BOT_TOKEN')
 
 ### Creating a Command and Event Handlers
 ```js
-const { Client, CommandHandler, EventHandler, Collection } = require('twitch-chat.js');
+const { Client, Collection } = require('twitch-chat.js');
+const { Command, Event } = require('@twitchchatjs/handlers');
 
 const client = new Client({
 	client_name: 'YOUR_BOT_NAME',
@@ -59,8 +60,8 @@ Handlers Examples
 Example:
 */
 
-let commands = new CommandHandler(a, './test/commands/')
-let event = new EventHandler(a, './test/events/')
+let commands = new Command(a, './test/commands/')
+let event = new Event(a, './test/events/')
 event.load()
 commands.load()
 
