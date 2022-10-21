@@ -163,7 +163,12 @@ client.login()
 #### Added (Events)
 - `punishment`
 - `unpunishment`
-
+#### Removed (ENV and options)
+- `TWITCH_NAME`
+- `CHANNELS`
+#### Change (ENV and options)
+- `TWITCH_TOKEN` to `CLIENT_TOKEN`
+- `OptionsClient = { name: 'foo'} to `OptionsClient = { client_name: 'foo'}
 #### Change (Methods)
 - `Message.channel.createClip() ` to `Message.channel.stream.createClip()`
 - `Message.channel.clip()` to `Message.channel.stream.clip()`

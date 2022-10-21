@@ -3,4 +3,5 @@
 /.env
 /.config
 /.replit
+/replit.nix
 /package-lock.json

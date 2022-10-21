@@ -1,17 +1,14 @@
 {
-  "name": "@twitchchatjs/twitch-chat.js",
-  "version": "1.0.3",
-  "description": "A simple twitch API wrapper",
+  "name": "@twitchchatjs/handlers",
+  "version": "1.0.0",
+  "description": "Implement of twitch-chat.js that creates handlers",
   "main": "index.js",
   "dependencies": {
-    "axios": "^0.27.2",
-    "express": "^4.18.2",
-    "express-session": "^1.17.3",
+		"axios": "^0.27.2",
     "fs": "^0.0.1-security",
-    "passport": "^0.6.0",
-    "passport-oauth": "^1.0.0",
     "ws": "^8.8.1"
   },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,8 +20,8 @@
     "twitch-client",
     "twitch-bot",
     "twitch-chat-bot",
-    "bot",
-    "chat-bot"
+		"bot",
+		"chat-bot"
   ],
   "author": "kayake.",
   "license": "Apache-2.0",
