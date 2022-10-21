@@ -77,7 +77,7 @@ module.exports = class Channel extends Base {
 	}
 
 	async deleteMessages() {
-		await this.twitch.rest.http('DELETE', constants.base + constants.endpoints.moderation.chat + `broadcaster_id=${this.user.id}&moderator_id=${moderator[0].id}`)
+		await this.twitch.rest.http('DELETE', constants.base + constants.endpoints.moderation.chat + `broadcaster_id=${this.user.id}&moderator_id=${process.env.ID}`)
 		return true
 	}
 }
