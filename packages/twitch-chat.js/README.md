@@ -17,7 +17,7 @@ A simple Twitch API wrapper
 ```bash
 npm i twitch-chat.js --save
 ```
-- Node version "16.7.0" or newer is required
+- Node version "16.18.0" or newer is required
 
 # Getting Starting
 ```js

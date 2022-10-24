@@ -124,7 +124,6 @@ module.exports = class WebSocket {
 		let message = e.data.trimEnd().split('\r\n')
 		message.forEach(msg => {
 			let parsedMessage = parseMessage(msg);
-			console.log(parsedMessage)
 			this.handleMessage(parsedMessage, data)
 		})
 		let arr = [];
