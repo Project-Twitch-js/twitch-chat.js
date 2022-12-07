@@ -7,7 +7,7 @@ module.exports = class ClientUser extends User {
 	}
 
 	join(op = {add: true}, ...c) {
-		let channels = c[0] || c
+		let channels = typeof c[0] == 'object' ? c[0] : c
 		let ar = []
 
 		channels.forEach(channel => {

@@ -23,7 +23,7 @@ npm i twitch-chat.js --save
 ```js
 const { Client } = require('twitch-chat.js');
 const client = new Client({
-	name: 'YOUR_BOT_NAME',
+	client_name: 'YOUR_BOT_NAME',
 	client_id: 'CLIENT_ID',
 	channels: ['foo']
 })

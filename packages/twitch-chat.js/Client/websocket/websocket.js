@@ -15,6 +15,12 @@ module.exports = class WebSocket {
 		this.msg = msg
 	}
 
+	async userinfo_update() {
+		let s = await this.twitch.fetch.LOGin(this.twitch.options.client_name)
+		this.twitch.user = new ClientUser(this.twitch, s)
+		process.env.ID = this.twitch.user.id
+	}
+
 	debug(message) {
 		return this.twitch.emit('debug', message)
 	}
@@ -87,12 +93,13 @@ module.exports = class WebSocket {
 			this.twitch.emit('message', message_)
 	}
 
-	messages_ws(msg_) {
+	async messages_ws(msg_) {
 		let json = this.msg.json_messages(msg_)
 		
 		if(json.command === 'PONG') {
 			this.twitch.ping = Date.now() - this.l
 			this.debug(`Responded with latency: ${this.twitch.ping}ms`)
+			await this.userinfo_update()
 		}
 		if(json.command === 'PING') {
 			this.debug('Responded with PING. Sent PONG')
@@ -130,7 +137,7 @@ module.exports = class WebSocket {
 		data.forEach(mg => {
 			arr.push(mg)
 					})
-		this.messages_ws(arr)
+		await this.messages_ws(arr)
 			}
 		
   async _onOpen() {
@@ -144,9 +151,7 @@ module.exports = class WebSocket {
 		this.debug(' CAP: OK\n PASS: OK\n NICK: OK')
 		this.debug('-------------------')
 		this.twitch.ping = Date.now() - this.l
-		let s = await this.twitch.fetch.LOGin(this.twitch.options.client_name)
-		this.twitch.user = new ClientUser(this.twitch, s)
-		process.env.ID = this.twitch.user.id
+		await this.userinfo_update()
 		this.join_channels()
 		this.connection = true
 		this.twitch.emit('ready', this.twitch)
